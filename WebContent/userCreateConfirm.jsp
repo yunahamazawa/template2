@@ -10,10 +10,9 @@
 	<meta http-equiv= "imagetoolbar" content= "no" />
 	<meta name= "description" content= "" />
 	<meta name= "keywords" content= "" />
-	<title>Login画面</title>
+	<title>UserCreateConfirm画面</title>
 
-
-<style type= "text/css">
+	<style type= "text/css">
 	body {
 		margin: 0;
 		padding: 0;
@@ -57,34 +56,57 @@
 
 </head>
 <body>
-	<div id = "header">
+	<div id= "header">
 		<div id= "pr">
 		</div>
 	</div>
-	<div id= "main" >
+	<div id= "main">
 		<div id= "top">
-			<p> Login </p>
+			<p> UserCreateConfirm </p>
 		</div>
 	<div>
-		<h3>商品を購入する際にはログインをお願いします。</h3>
-		<s:form action= "LoginAction">
-			<s:textfield name= "loginUserId" />
-			<s:password name=  "loginPassword" />
-			<s:submit value= "ログイン" />
+		<h3>登録する内容は以下でよろしいですか。</h3>
+		<table>
+			<s:form action= "UserCreateCompleteAction">
+
+		<tr id= "box">
+			<td>
+				<label>ログインID</label>
+			</td>
+			<td>
+					<s:property value="loginUserId" escape="false" />
+			</td>
+		</tr>
+		<tr id= "box">
+			<td>
+				<label>ログインPASS</label>
+			</td>
+			<td>
+				<s:property value= "loginPassword" escape= "false" />
+			</td>
+		</tr>
+		<tr id= "box">
+			<td>
+				<label>ユーザー名:</label>
+			</td>
+			<td>
+				<s:property value= "userName" escape= "false" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<s:submit value= "完了" />
+			</td>
+		</tr>
 		</s:form>
-		<br/>
-		<div>
-			<span>新規ユーザー登録は
-				<a href='<s:url action="UserCreateAction" />'>こちら
-				</a>
-			</span>
+		</table>
 		</div>
-	</div>
-	</div>
-	<div id= "footer">
-		<div id= "pr">
 		</div>
-	</div>
+		<div id= "footer">
+			<div id= "pr">
+			</div>
+		</div>
+
 
 </body>
 </html>
