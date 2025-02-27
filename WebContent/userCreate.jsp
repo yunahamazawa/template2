@@ -79,7 +79,7 @@
 					<label>ログインID:</label>
 				</td>
 				<td>
-					<input type= "text" name= "loginUserId" value="" />
+					<input type= "text" name= "loginUserId" value= "" />
 				</td>
 			</tr>
 			<tr>
@@ -87,7 +87,7 @@
 					<label>ログインPASS:</label>
 				</td>
 				<td>
-					<input type= "text" name= "loginPassword" value="" />
+					<input type= "text" name= "loginPassword" value= "" />
 				</td>
 			</tr>
 			<tr>
@@ -95,7 +95,7 @@
 					<label>ユーザー名</label>
 				</td>
 				<td>
-					<input type= "text" name= "userName" value="" />
+					<input type= "text" name= "userName" value= "" />
 				</td>
 			</tr>
 			<s:submit value= "登録" />

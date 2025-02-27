@@ -1,7 +1,7 @@
 set names utf8;
 set foreign_key_checks = 0;
 drop database if exists ecsite;
-create database ecsite;
+create database e if not exists ecsite;
 use ecsite;
 
 
@@ -46,5 +46,5 @@ create table user_buy_item_transaction(
 );
 
 
-insert into item_info_transaction (item_name, item_price, item_stock) values ("ノートBook", "100", "50");
+insert into item_info_transaction (item_name, item_price, item_stock) values ("ノートBook", 100, 50);
 insert into login_user_transaction (login_id, login_pass, user_name) values ("internous", "internous01", "test");
